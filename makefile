@@ -22,13 +22,17 @@ CXX_FLAGS += -std=c++11 -O2 -Wall -Wextra -DH5_USE_18_API
 ###############################################################################
 
 ifdef CXX
-     GCC_VERSION = $(shell $(CXX) -dumpversion -dumpfullversion | sed -r 's/\.//g' | xargs)
+  GCC_VERSION = $(shell $(CXX) -dumpversion 2>/dev/null | sed -r 's/\.//g' | xargs)
+  GCC_FULL_VERSION = $(shell $(CXX) -dumpfullversion 2>/dev/null | sed -r 's/\.//g' | xargs)
 else
-     GCC_VERSION = $(shell g++ -dumpversion -dumpfullversion | sed -r 's/\.//g' | xargs)
+  GCC_VERSION = $(shell g++ -dumpversion 2>/dev/null | sed -r 's/\.//g' | xargs)
+  GCC_FULL_VERSION = $(shell g++ -dumpfullversion 2>/dev/null | sed -r 's/\.//g' | xargs)
 endif
 
 MIN_GCC_VERISON = 490
-GCC_VERSION_OK = $(shell expr $(GCC_VERSION) '>=' $(MIN_GCC_VERISON))
+GCC_VERSION_OK = $(shell expr length $(GCC_VERSION) '&' $(GCC_VERSION) '>=' $(MIN_GCC_VERISON))
+GCC_FULL_VERSION_OK = $(shell expr length $(GCC_FULL_VERSION) '&' $(GCC_FULL_VERSION) '>=' $(MIN_GCC_VERISON))
+GCC_OK = $(shell expr $(GCC_VERSION_OK) '|' $(GCC_FULL_VERSION_OK))
 
 AR = ar
 ARFLAGS = -rv
@@ -86,7 +90,7 @@ all : check_compiler $(LIB_LIST) $(BIN_LIST)
 	@echo ""
 
 check_compiler :
-	@if [ $(GCC_VERSION_OK) -eq 0 ] ; then echo "!!!ERROR - GCC version must be >= 4.9 !!!" ; false ; fi
+	@if [ $(GCC_OK) -eq 0 ] ; then echo "!!!ERROR - GCC version must be >= 4.9 !!!" ; false ; fi
 
 clean:
 	rm -rf $(BIN_DIR)/* \
