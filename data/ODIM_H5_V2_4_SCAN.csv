@@ -74,7 +74,6 @@ Node;Category;Type;IsMandatory;PossibleValues;Reference
 .*how/elmethod;Attribute;string;FALSE;;OPERA_ODIM_v2.4.pdf,Section 4.4
 .*how/binmethod;Attribute;string;FALSE;;OPERA_ODIM_v2.4.pdf,Section 4.4
 .*how/binmethod_avg;Attribute;integer;FALSE;;OPERA_ODIM_v2.4.pdf,Section 4.4
-.*how/elangles;Attribute;real array;FALSE;;OPERA_ODIM_v2.4.pdf,Section 4.4
 .*how/startazA;Attribute;real array;FALSE;;OPERA_ODIM_v2.4.pdf,Section 4.4
 .*how/stopazA;Attribute;real array;FALSE;;OPERA_ODIM_v2.4.pdf,Section 4.4
 .*how/startelA;Attribute;real array;FALSE;;OPERA_ODIM_v2.4.pdf,Section 4.4
@@ -123,7 +122,7 @@ Node;Category;Type;IsMandatory;PossibleValues;Reference
 .*how/BBC;Attribute;string;FALSE;(True)?(False)?;OPERA_ODIM_v2.4.pdf,Section 4.4
 .*how/PAC;Attribute;real;FALSE;;OPERA_ODIM_v2.4.pdf,Section 4.4
 .*how/SNRT;Attribute;real;FALSE;;OPERA_ODIM_v2.4.pdf,Section 4.4
-.*how/SNRT_threshold;Attribute;real;FALSE;;OPERA_ODIM_v2.4.pdf,Section 4.4
+.*how/SNR_threshold;Attribute;real;FALSE;;OPERA_ODIM_v2.4.pdf,Section 4.4
 .*how/SNRHCT;Attribute;real;FALSE;;OPERA_ODIM_v2.4.pdf,Section 4.4
 .*how/SNRHC_threshold;Attribute;real;FALSE;;OPERA_ODIM_v2.4.pdf,Section 4.4
 .*how/SNRHXT;Attribute;real;FALSE;;OPERA_ODIM_v2.4.pdf,Section 4.4
@@ -171,3 +170,4 @@ Node;Category;Type;IsMandatory;PossibleValues;Reference
 .*/quality[1-9][0-9]*/what/nodata;Attribute;real;FALSE;;OPERA_ODIM_v2.4.pdf,Section 4.5
 .*/quality[1-9][0-9]*/what/undetect;Attribute;real;FALSE;;OPERA_ODIM_v2.4.pdf,Section 4.5
 .*/quality[1-9][0-9]*/data;Dataset;;FALSE;;
+
