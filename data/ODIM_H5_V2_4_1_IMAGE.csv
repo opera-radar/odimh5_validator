@@ -70,6 +70,7 @@ Node;Category;Type;IsMandatory;PossibleValues;Reference
 .*how/nodes;Attribute;string;FALSE;;OPERA_ODIM_v2.4.pdf,Section 4.4
 .*how/missing_nodes;Attribute;string;FALSE;;OPERA_ODIM_v2.4.1.pdf,Section 4.4
 .*how/ACCnum;Attribute;string;FALSE;;OPERA_ODIM_v2.4.pdf,Section 4.4
+.*how/metadata_changed;Attribute;string;FALSE;;OPERA_ODIM_v2.4.pdf,Section 4.4
 /dataset[1-9][0-9]*;Group;;TRUE;;
 /dataset[1-9][0-9]*(/data[1-9][0-9]*)?/what;Group;;TRUE;;OPERA_ODIM_v2.4.pdf,Section 4.5
 /dataset[1-9][0-9]*(/data[1-9][0-9]*)?/what/product;Attribute;string;TRUE;PPI|CAPPI|PCAPPI|ETOP|MAX|RR|VIL|COMP|VP|RHI|XSEC|VSP|HSP|QUAL;OPERA_ODIM_v2.4.pdf,Section 4.5
