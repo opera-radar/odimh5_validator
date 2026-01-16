@@ -69,7 +69,7 @@ Node;Category;Type;IsMandatory;PossibleValues;Reference
 .*how/camethod;Attribute;string;FALSE;NEAREST|INTERPOL|AVERAGE|RANDOM|MDE|LATEST|MAXIMUM|DOMAIN|VAD|VVP|RGA;OPERA_ODIM_v2.4.pdf,Section 4.4
 .*how/nodes;Attribute;string;FALSE;;OPERA_ODIM_v2.4.pdf,Section 4.4
 .*how/missing_nodes;Attribute;string;FALSE;;OPERA_ODIM_v2.4.1.pdf,Section 4.4
-.*how/ACCnum;Attribute;string;FALSE;;OPERA_ODIM_v2.4.pdf,Section 4.4
+.*how/ACCnum;Attribute;integer;FALSE;;OPERA_ODIM_v2.4.pdf,Section 4.4
 .*how/metadata_changed;Attribute;string;FALSE;;OPERA_ODIM_v2.4.pdf,Section 4.4
 .*how/license;Attribute;string;FALSE;;OPERA_ODIM_v2.4.2.pdf,Section 4.4
 .*how/naming_authority;Attribute;string;FALSE;;OPERA_ODIM_v2.4.2.pdf,Section 4.4
