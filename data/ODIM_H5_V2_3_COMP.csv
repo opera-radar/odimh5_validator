@@ -68,7 +68,7 @@ Node;Category;Type;IsMandatory;PossibleValues;Reference
 .*how/arotation;Attribute;real array;FALSE;;OPERA_ODIM_v2.3.pdf,Section 4.4
 .*how/camethod;Attribute;string;FALSE;NEAREST|INTERPOL|AVERAGE|RANDOM|MDE|LATEST|MAXIMUM|DOMAIN|VAD|VVP|RGA;OPERA_ODIM_v2.3.pdf,Section 4.4
 .*how/nodes;Attribute;string;FALSE;;OPERA_ODIM_v2.3.pdf,Section 4.4
-.*how/ACCnum;Attribute;string;FALSE;;OPERA_ODIM_v2.3.pdf,Section 4.4
+.*how/ACCnum;Attribute;integer;FALSE;;OPERA_ODIM_v2.3.pdf,Section 4.4
 /dataset[1-9][0-9]*;Group;;TRUE;;
 /dataset[1-9][0-9]*(/data[1-9][0-9]*)?/what;Group;;TRUE;;OPERA_ODIM_v2.3.pdf,Section 4.5
 /dataset[1-9][0-9]*(/data[1-9][0-9]*)?/what/product;Attribute;string;TRUE;PPI|CAPPI|PCAPPI|ETOP|MAX|RR|VIL|COMP|VP|RHI|XSEC|VSP|HSP|QUAL;OPERA_ODIM_v2.3.pdf,Section 4.5
@@ -90,4 +90,5 @@ Node;Category;Type;IsMandatory;PossibleValues;Reference
 /dataset[1-9][0-9]*/data[1-9][0-9]*/data/PALETTE;Attribute;link;FALSE;;OPERA_ODIM_v2.3.pdf,Section 6
 /dataset[1-9][0-9]*/data[1-9][0-9]*/palette;Dataset;;FALSE;;OPERA_ODIM_v2.3.pdf,Section 6
 /dataset[1-9][0-9]*/data[1-9][0-9]*/palette/CLASS;Attribute;string;FALSE;;OPERA_ODIM_v2.3.pdf,Section 6
+
 /dataset[1-9][0-9]*/data[1-9][0-9]*/palette/PAL_VERSION;Attribute;string;FALSE;1.2;OPERA_ODIM_v2.3.pdf,Section 6
