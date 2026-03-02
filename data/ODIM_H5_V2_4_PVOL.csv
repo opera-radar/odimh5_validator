@@ -170,4 +170,3 @@ Node;Category;Type;IsMandatory;PossibleValues;Reference
 .*/quality[1-9][0-9]*/what/nodata;Attribute;real;FALSE;;OPERA_ODIM_v2.4.pdf,Section 4.5
 .*/quality[1-9][0-9]*/what/undetect;Attribute;real;FALSE;;OPERA_ODIM_v2.4.pdf,Section 4.5
 .*/quality[1-9][0-9]*/data;Dataset;;FALSE;;
-
